@@ -1,12 +1,12 @@
 cask "tempo" do
-  version "1.0.0"
+  version "1.1.0"
 
   if Hardware::CPU.arm?
     url "https://github.com/bananacoffeecode/tempo-time-tracker/releases/download/v#{version}/Tempo-#{version}-arm64.dmg"
-    sha256 "80cd3d83ac49b51fbc716c873eb5574701d09648db81ea8a2a5dd9e7b39d618f"
+    sha256 "2af55bac76e8931ff4a073c46a5fdb09419aaf33f629d51e854ef3058009a4c8"
   else
     url "https://github.com/bananacoffeecode/tempo-time-tracker/releases/download/v#{version}/Tempo-#{version}.dmg"
-    sha256 "6a773b9438dde96e97ab80c5da040d3e53afd8a414753ea8f3e2c09e52b64baf"
+    sha256 "214e0bc64050070861539364f091b85ac3518eb36060dcd143c5451dc88dca6b"
   end
 
   name "Tempo"
