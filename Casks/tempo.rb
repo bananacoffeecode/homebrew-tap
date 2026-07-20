@@ -1,14 +1,8 @@
 cask "tempo" do
-  version "1.1.0"
+  version "2.0.0"
+  sha256 "d1fcbe6a21e366abb9e8cc67841f88c43b2d1837f27f1d2cc36f546359d87224"
 
-  if Hardware::CPU.arm?
-    url "https://github.com/bananacoffeecode/tempo-time-tracker/releases/download/v#{version}/Tempo-#{version}-arm64.dmg"
-    sha256 "2af55bac76e8931ff4a073c46a5fdb09419aaf33f629d51e854ef3058009a4c8"
-  else
-    url "https://github.com/bananacoffeecode/tempo-time-tracker/releases/download/v#{version}/Tempo-#{version}.dmg"
-    sha256 "214e0bc64050070861539364f091b85ac3518eb36060dcd143c5451dc88dca6b"
-  end
-
+  url "https://github.com/bananacoffeecode/tempo-time-tracker/releases/download/v#{version}/Tempo.dmg"
   name "Tempo"
   desc "Mac menu bar time tracker that logs sessions to Google Calendar"
   homepage "https://github.com/bananacoffeecode/tempo-time-tracker"
@@ -22,7 +16,6 @@ cask "tempo" do
   end
 
   zap trash: [
-    "~/Library/Application Support/time-tracker",
-    "~/Library/Preferences/com.sulakshana.tempo.plist",
+    "~/Library/Preferences/tempo.Tempo.plist",
   ]
 end
