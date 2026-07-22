@@ -1,6 +1,6 @@
 cask "tempo" do
   version "2.0.0"
-  sha256 "e258ed27548d5d0eca0a2ea85c28e93d7f4d452651a3a8cd3d47e02cc3ba1065"
+  sha256 "9c8e0879e798d8ed180156b18498235bcc0fa3250f21fc71fce466c872377d1e"
 
   url "https://github.com/bananacoffeecode/tempo-time-tracker/releases/download/v#{version}/Tempo.dmg"
   name "Tempo"
