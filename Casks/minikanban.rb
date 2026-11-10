@@ -1,6 +1,6 @@
 cask "minikanban" do
-  version "1.0.3"
-  sha256 "1d414fc0ce13eb8f7c6fac0d9a6a9ba5ea5c01a13a26ac69e09de42a5c618b0a"
+  version "1.0.4"
+  sha256 "fa17199aff91dcec9d0e878dc217df667e6c31680e1444c4520f2c0dda66fdce"
 
   url "https://github.com/bananacoffeecode/minikanban/releases/download/v#{version}/Minikanban.zip"
   name "Minikanban"
